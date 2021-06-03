@@ -1,9 +1,14 @@
 import React from "react";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import GlobalStyle from "./globalStyles";
 function App() {
   return (
-    <div className="App">
-     <h>Heyyyy</h>
-    </div>
+    <Router>
+      <GlobalStyle/>
+      <Navbar/>
+      {/* <Switch></Switch> */}
+    </Router>
   );
 }
 
