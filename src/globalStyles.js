@@ -29,7 +29,7 @@ export const Button= styled.button`
 border-radius: 4px;
 color: #fff;
 white-space: nowrap;
-background: ${({primary})=>(primary? '#4B59F7' : '#467FB')};
+background: ${({ primary }) => (primary ? '#4B59F7' : '#0467FB')};
 padding: ${({big})=>( big ? '12px 64px': '10px 20px')};
 font-size: ${({fontBig})=>( fontBig ? '20px': '16px')};
 outline: none;
@@ -39,7 +39,7 @@ cursor: pointer;
 &:hover{
   transition: all 0.3s ease-out;
   background: #fff;
-  background: ${({primary})=>(primary? '#0467FB' : '#4B59F7')};
+  background: ${({primary})=>(primary ? '#0467FB' : '#4B59F7')};
 }
 
 @media screen and(max-width:960px){
